@@ -1,0 +1,30 @@
+{
+  "name": "s3-bak",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:type": "tsc --noEmit --skipLibCheck"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@gaonengwww/eslint-config": "^1.0.4",
+    "eslint": "^9.20.0",
+    "tsup": "^8.3.6",
+    "vitest": "^3.0.5"
+  },
+  "dependencies": {
+    "typescript": "^5.7.3"
+  }
+}
